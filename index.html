@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>金牌续保提升计划 - 线上招募</title>
+    <title>金牌续保提升计划 - 人才招募</title>
     <!-- 引入Tailwind CSS实现快速样式开发 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入Font Awesome图标 -->
@@ -29,14 +29,17 @@
     <style type="text/tailwindcss">
         @layer utilities {
             .text-shadow {
-                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                text-shadow: 0 2px 8px rgba(0,0,0,0.2);
             }
             .card-hover {
                 transition: all 0.3s ease;
             }
             .card-hover:hover {
                 transform: translateY(-5px);
-                box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+                box-shadow: 0 12px 28px -8px rgba(0,0,0,0.15);
+            }
+            .img-shadow {
+                box-shadow: 0 8px 24px rgba(0,0,0,0.1);
             }
         }
     </style>
@@ -44,101 +47,119 @@
 <body class="bg-light font-sans text-secondary">
     <!-- 顶部导航栏 -->
     <nav class="bg-white shadow-md fixed w-full top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="text-primary font-bold text-xl md:text-2xl">金牌续保提升计划</div>
-            <div class="text-sm text-gray-600">招募热线：<span class="font-medium">400-XXXX-XXXX</span></div>
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-primary font-bold text-xl md:text-2xl mb-2 md:mb-0">金牌续保提升计划</div>
+            <div class="text-sm text-gray-600 flex items-center">
+                <<i class="fa-solid fa-phone-volume text-primary mr-2"></</i>
+                招募热线：<span class="font-medium text-primary">13205904817</span>
+            </div>
         </div>
     </nav>
 
-    <!-- 头部Banner -->
-    <header class="pt-20 pb-12 md:pt-28 md:pb-20 bg-gradient-to-r from-secondary to-primary/90 text-white">
+    <!-- 头部Banner（新增主题配图） -->
+    <header class="pt-20 pb-16 md:pt-28 md:pb-24 bg-gradient-to-r from-secondary to-primary/90 text-white">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4 text-shadow">金牌续保提升计划</h1>
-            <p class="text-[clamp(1rem,2vw,1.25rem)] max-w-3xl mx-auto opacity-90">
-                赋能服务店续保业务增长，打造车险+售后复合型专家团队
+            <div class="max-w-4xl mx-auto mb-8">
+                <img src="https://picsum.photos/id/1071/1200/400" alt="汽车服务行业续保业务升级" class="w-full h-auto rounded-xl img-shadow">
+            </div>
+            <h1 class="text-[clamp(2rem,5vw,3.8rem)] font-bold mb-4 text-shadow">金牌续保提升计划</h1>
+            <p class="text-[clamp(1rem,2vw,1.3rem)] max-w-3xl mx-auto opacity-90 leading-relaxed">
+                把握汽车后市场新机遇，赋能服务店续保业务爆发式增长，诚邀车险+售后复合型人才共赴新程！
             </p>
-            <a href="#signup" class="mt-8 inline-block bg-accent text-secondary font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-accent/90 transition-all">
-                立即报名 <i class="fa-solid fa-arrow-right ml-2"></i>
+            <a href="#signup" class="mt-10 inline-block bg-accent text-secondary font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-accent/90 transition-all transform hover:scale-105">
+                立即报名 <<i class="fa-solid fa-arrow-right ml-2"></</i>
             </a>
         </div>
     </header>
 
-    <!-- 项目背景板块 -->
+    <!-- 项目背景板块（优化文案+新增配图） -->
     <section class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center text-secondary">项目背景</h2>
-                <div class="bg-light rounded-xl p-6 md:p-8 shadow-md border-l-4 border-primary">
-                    <p class="text-lg leading-relaxed">
-                        随着新车销量增速放缓，进入服务店售后体系的客户数量相应减少，直接影响服务店在续保业务上的竞争力及话语权。当保费&lt;产值时，谈判话语权降低，保司管控严重，产值打折反制，严重影响服务店事故产值来源。
-                    </p>
-                    <p class="text-lg leading-relaxed mt-4">
-                        为此，自2025年11月起正式开展<span class="text-primary font-bold">金牌续保提升计划</span>，聚焦续保业务核心痛点，全方位助力服务店续保业务提质增效。
-                    </p>
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2">
+                    <img src="https://picsum.photos/id/1072/600/400" alt="汽车后市场发展趋势" class="w-full h-auto rounded-xl img-shadow">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-secondary flex items-center">
+                        <<i class="fa-solid fa-magnifying-glass-chart text-primary mr-3"></</i>项目背景
+                    </h2>
+                    <div class="bg-light rounded-xl p-6 md:p-8 shadow-md border-l-4 border-primary">
+                        <p class="text-lg leading-relaxed mb-4">
+                            新车市场增速放缓，直接导致服务店售后客户流量下滑，续保业务竞争力承压——当保费规模低于产值时，与保司的谈判话语权减弱，事故产值被压缩，成为行业共同痛点。
+                        </p>
+                        <p class="text-lg leading-relaxed font-medium text-primary">
+                            2025年11月，「金牌续保提升计划」正式启动！聚焦核心痛点，以专业体系化运营，助力服务店突破增长瓶颈，重塑续保业务竞争力。
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 项目价值板块 -->
+    <!-- 项目价值板块（优化文案+新增图标配图） -->
     <section class="py-16 md:py-24 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-secondary">项目核心价值</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-secondary flex items-center justify-center">
+                <<i class="fa-solid fa-gem text-accent mr-3"></</i>项目核心价值
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- 服务店价值 -->
                 <div class="bg-white rounded-xl p-8 shadow-md card-hover border-t-4 border-primary">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fa-solid fa-store"></i>
+                    <div class="text-primary text-4xl mb-4 flex justify-center">
+                        <<i class="fa-solid fa-store"></</i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">对服务店</h3>
-                    <ul class="space-y-3 text-gray-700">
+                    <div class="w-20 h-1 bg-primary/30 mx-auto mb-6 rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-4 text-center">赋能服务店增长</h3>
+                    <ul class="space-y-4 text-gray-700">
                         <li class="flex items-start">
-                            <i class="fa-solid fa-check-circle text-primary mt-1 mr-3"></i>
-                            <span>提升续保率，增强与保司“保费换产值”谈判话语权、抗风险能力，获取事故第一手线索</span>
+                            <<i class="fa-solid fa-check-circle text-primary mt-1 mr-3 text-lg"></</i>
+                            <span>大幅提升续保率，强化“保费换产值”谈判主动权，抗风险能力翻倍，锁定事故车核心线索</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fa-solid fa-check-circle text-primary mt-1 mr-3"></i>
-                            <span>续保率提升带动事故毛利率、备件销量增长，按31%出险概率测算，每新增1个续保客户带来1250元收益</span>
+                            <<i class="fa-solid fa-check-circle text-primary mt-1 mr-3 text-lg"></</i>
+                            <span>按31%年度出险概率测算，每新增1位续保客户，即可为服务店带来1250元稳定收益，撬动事故毛利率与备件销量双重增长</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- 客户价值 -->
                 <div class="bg-white rounded-xl p-8 shadow-md card-hover border-t-4 border-accent">
-                    <div class="text-accent text-4xl mb-4">
-                        <i class="fa-solid fa-user-circle"></i>
+                    <div class="text-accent text-4xl mb-4 flex justify-center">
+                        <<i class="fa-solid fa-user-circle"></</i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">对客户</h3>
-                    <ul class="space-y-3 text-gray-700">
+                    <div class="w-20 h-1 bg-accent/30 mx-auto mb-6 rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-4 text-center">升级客户体验</h3>
+                    <ul class="space-y-4 text-gray-700">
                         <li class="flex items-start">
-                            <i class="fa-solid fa-check-circle text-accent mt-1 mr-3"></i>
-                            <span>提供省心省力、原厂配件、专人跟进理赔的无忧一站式服务体验</span>
+                            <<i class="fa-solid fa-check-circle text-accent mt-1 mr-3 text-lg"></</i>
+                            <span>提供“省心投保+原厂配件+专人理赔”一站式服务，全程无忧，告别繁琐流程</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fa-solid fa-check-circle text-accent mt-1 mr-3"></i>
-                            <span>享受更全面的保障与专属化售后服务</span>
+                            <<i class="fa-solid fa-check-circle text-accent mt-1 mr-3 text-lg"></</i>
+                            <span>定制化保障方案，覆盖全场景用车需求，让客户享受更全面、更安心的售后服务</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- 个人价值 -->
                 <div class="bg-white rounded-xl p-8 shadow-md card-hover border-t-4 border-secondary">
-                    <div class="text-secondary text-4xl mb-4">
-                        <i class="fa-solid fa-user-tie"></i>
+                    <div class="text-secondary text-4xl mb-4 flex justify-center">
+                        <<i class="fa-solid fa-user-tie"></</i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">对个人</h3>
-                    <ul class="space-y-3 text-gray-700">
+                    <div class="w-20 h-1 bg-secondary/30 mx-auto mb-6 rounded-full"></div>
+                    <h3 class="text-xl font-bold mb-4 text-center">加速个人成长</h3>
+                    <ul class="space-y-4 text-gray-700">
                         <li class="flex items-start">
-                            <i class="fa-solid fa-check-circle text-secondary mt-1 mr-3"></i>
-                            <span>专业能力快速进阶，成为车险+售后复合型专家</span>
+                            <<i class="fa-solid fa-check-circle text-secondary mt-1 mr-3 text-lg"></</i>
+                            <span>深耕车险+售后双领域，快速成长为复合型专家，掌握行业稀缺技能</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fa-solid fa-check-circle text-secondary mt-1 mr-3"></i>
-                            <span>业务操盘能力全面升级，具备独立项目落地能力</span>
+                            <<i class="fa-solid fa-check-circle text-secondary mt-1 mr-3 text-lg"></</i>
+                            <span>独立操盘项目全流程，提升业务统筹与落地能力，打造核心职业竞争力</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fa-solid fa-check-circle text-secondary mt-1 mr-3"></i>
-                            <span>强化培训与赋能能力，适配更高阶岗位要求</span>
+                            <<i class="fa-solid fa-check-circle text-secondary mt-1 mr-3 text-lg"></</i>
+                            <span>享受体系化培训与赋能，解锁演讲、培训等高阶技能，冲刺管理岗赛道</span>
                         </li>
                     </ul>
                 </div>
@@ -146,73 +167,96 @@
         </div>
     </section>
 
-    <!-- 所需能力板块 -->
+    <!-- 所需能力板块（优化文案+新增配图） -->
     <section class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:py-4xl font-bold mb-12 text-center text-secondary">招募所需能力</h2>
-            <div class="max-w-3xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-secondary flex items-center justify-center">
+                <<i class="fa-solid fa-user-gear text-primary mr-3"></</i>我们寻找这样的你
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- 能力1 -->
-                    <div class="bg-light rounded-xl p-6 text-center card-hover shadow-sm">
-                        <div class="text-primary text-3xl mb-3">
-                            <i class="fa-solid fa-car-insurance"></i>
+                    <div class="bg-light rounded-xl p-8 text-center card-hover shadow-sm flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mb-5">
+                            <<i class="fa-solid fa-car-insurance text-primary text-4xl"></</i>
                         </div>
-                        <h4 class="font-bold mb-2">专业能力</h4>
-                        <p class="text-gray-600">具备汽车保险续保相关经验</p>
+                        <h4 class="font-bold text-lg mb-3">专业积淀</h4>
+                        <p class="text-gray-600 text-base leading-relaxed">具备汽车保险续保相关实战经验，熟悉车险产品与服务流程</p>
                     </div>
                     <!-- 能力2 -->
-                    <div class="bg-light rounded-xl p-6 text-center card-hover shadow-sm">
-                        <div class="text-primary text-3xl mb-3">
-                            <i class="fa-solid fa-chart-simple"></i>
+                    <div class="bg-light rounded-xl p-8 text-center card-hover shadow-sm flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mb-5">
+                            <<i class="fa-solid fa-chart-simple text-primary text-4xl"></</i>
                         </div>
-                        <h4 class="font-bold mb-2">协作分析能力</h4>
-                        <p class="text-gray-600">跨部门协作、数据分析能力</p>
+                        <h4 class="font-bold text-lg mb-3">协作分析</h4>
+                        <p class="text-gray-600 text-base leading-relaxed">擅长跨部门沟通协作，具备基础数据分析能力，能快速定位问题</p>
                     </div>
                     <!-- 能力3 -->
-                    <div class="bg-light rounded-xl p-6 text-center card-hover shadow-sm">
-                        <div class="text-primary text-3xl mb-3">
-                            <i class="fa-solid fa-microphone"></i>
+                    <div class="bg-light rounded-xl p-8 text-center card-hover shadow-sm flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mb-5">
+                            <<i class="fa-solid fa-microphone text-primary text-4xl"></</i>
                         </div>
-                        <h4 class="font-bold mb-2">沟通表达能力</h4>
-                        <p class="text-gray-600">良好的沟通、演讲能力</p>
+                        <h4 class="font-bold text-lg mb-3">沟通表达</h4>
+                        <p class="text-gray-600 text-base leading-relaxed">具备优秀的沟通协调能力与演讲表达力，能高效传递信息</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-primary/5 rounded-xl p-6 text-center">
+                    <p class="text-gray-700 text-lg">
+                        <<i class="fa-solid fa-lightbulb text-accent mr-2"></</i>
+                        如果你有强烈的成长意愿、对汽车后市场充满热情，即使经验稍有欠缺，也欢迎勇敢投递！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 报名板块（替换问卷链接+新增背景图） -->
+    <section id="signup" class="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-accent/10 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://picsum.photos/id/1068/1920/1080" alt="背景图" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-secondary">加入我们，共启增长新篇</h2>
+                <p class="text-lg mb-10 text-gray-700 leading-relaxed">
+                    这里有清晰的职业发展路径、丰厚的回报、优质的成长资源，
+                    诚邀你与我们一起，在汽车后市场的蓝海中乘风破浪，实现个人与事业的双重突破！
+                </p>
+                <!-- 替换为企微收集表链接 -->
+                <a href="https://doc.weixin.qq.com/forms/AFIAoQc6AAgAbYAMgacAHUCNbceolQ1ff" target="_blank" rel="noopener noreferrer" 
+                   class="inline-block bg-primary text-white font-bold py-4 px-12 rounded-lg shadow-lg hover:bg-primary/90 transition-all text-lg transform hover:scale-105">
+                    <<i class="fa-solid fa-file-signature mr-2"></</i>
+                    【收集表】金牌续保提升计划人才招募
+                </a>
+                <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-6 text-gray-600">
+                    <div class="flex items-center">
+                        <<i class="fa-solid fa-clock text-primary mr-2"></</i>
+                        <span>报名后3个工作日内反馈</span>
+                    </div>
+                    <div class="flex items-center">
+                        <<i class="fa-solid fa-phone text-primary mr-2"></</i>
+                        <span>咨询热线：13205904817</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 报名板块 -->
-    <section id="signup" class="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-accent/10">
-        <div class="container mx-auto px-4">
-            <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-secondary">加入我们，共启增长</h2>
-                <p class="text-lg mb-8 text-gray-700">
-                    如果你符合上述能力要求，渴望在车险续保领域实现专业突破与职业成长，立即报名加入金牌续保提升计划！
-                </p>
-                <!-- 跳转企微文档的按钮（替换成你的企微文档链接） -->
-                <a href="https://docs.qq.com/form/page/XXXXXXXXXXXX" target="_blank" rel="noopener noreferrer" 
-                   class="inline-block bg-primary text-white font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-primary/90 transition-all text-lg">
-                    <i class="fa-solid fa-file-signature mr-2"></i>
-                    填写报名信息
-                </a>
-                <p class="mt-6 text-gray-600 text-sm">
-                    报名表单为企业微信文档，提交后我们将在3个工作日内与你联系
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- 页脚 -->
-    <footer class="bg-secondary text-white py-8">
+    <footer class="bg-secondary text-white py-10">
         <div class="container mx-auto px-4 text-center">
-            <p class="mb-2">金牌续保提升计划 · 赋能服务店续保业务增长</p>
-            <p class="text-sm opacity-70">© 2025 汽车服务事业部 版权所有</p>
+            <div class="mb-4">
+                <img src="https://picsum.photos/id/1005/120/60" alt="品牌标识" class="h-10 inline-block">
+            </div>
+            <p class="mb-3 text-lg">金牌续保提升计划 · 赋能服务店续保业务增长</p>
+            <p class="text-sm opacity-70">咨询热线：13205904817 | 报名链接：<a href="https://doc.weixin.qq.com/forms/AFIAoQc6AAgAbYAMgacAHUCNbceolQ1ff" target="_blank" class="underline hover:text-accent transition-colors">企微收集表</a></p>
+            <p class="mt-4 text-sm opacity-70">© 2025 汽车服务事业部 版权所有</p>
         </div>
     </footer>
 
     <!-- 回到顶部按钮 -->
-    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all hover:bg-primary/90">
-        <i class="fa-solid fa-arrow-up"></i>
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all hover:bg-primary/90 z-50">
+        <<i class="fa-solid fa-arrow-up"></</i>
     </button>
 
     <script>
@@ -242,6 +286,21 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // 图片加载动画
+        document.querySelectorAll('img').forEach(img => {
+            img.classList.add('opacity-0', 'transition-opacity', 'duration-700');
+            img.onload = function() {
+                this.classList.remove('opacity-0');
+                this.classList.add('opacity-100');
+            }
+            // 若图片加载失败，显示备用图
+            img.onerror = function() {
+                this.src = 'https://picsum.photos/400/300';
+                this.classList.remove('opacity-0');
+                this.classList.add('opacity-100');
+            }
         });
     </script>
 </body>
